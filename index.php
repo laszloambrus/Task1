@@ -33,13 +33,13 @@
     $num1 = '';
     echo "\nPlease enter a number below 1000!";
     while(!$num1){
-        $num1 = trim(fgets(STDIN,3));
+        fscanf(STDIN, "%d\n", $num1);
     }
 
     $num2 = '';
     echo "\nPlease enter the second number!";
     while(!$num2){
-        $num2 = trim(fgets(STDIN,3));
+        fscanf(STDIN, "%d\n", $num2);
     }
 
     //Echoing the sum
